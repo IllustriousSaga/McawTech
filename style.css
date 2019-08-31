@@ -409,7 +409,7 @@ input:-webkit-autofill:focus {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #8790af;
+    color: #e0e0e0;
     font-weight: 600;
 }
 
@@ -425,7 +425,16 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
-
+@media(max-width:450px){
+    .page-title .title {
+        
+    }
+    .text-center.page-title .title:before,
+.page-title .title:after{
+ width:0px;
+ height:0px;
+}
+}
 /*-- 7. Home-Area --*/
 
 .home-area {
