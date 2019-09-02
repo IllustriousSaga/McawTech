@@ -190,13 +190,7 @@ input:-webkit-autofill:focus {
 .bttn-default {
     padding: 12px 40px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #dd3838, #ce333c, #be303e, #ad2d3f, #9d2b3f);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     color: #ffffff;
@@ -425,16 +419,34 @@ input:-webkit-autofill:focus {
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
 }
-@media(max-width:450px){
-    .page-title .title {
-        
-    }
+.about-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #494949;
+    font-weight: 600;
+}
+
+.text-center .about-title:before,
+ .about-title:after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    background-color: #494949;
+    margin: 0 15px;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
     .text-center.page-title .title:before,
 .page-title .title:after{
  width:0px;
  height:0px;
 }
-}
+
 /*-- 7. Home-Area --*/
 
 .home-area {
@@ -445,7 +457,20 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     margin-bottom: 100px;
 }
+.about-area{
+    width: 100%;
+    background: url('images/about.gif') no-repeat scroll center bottom / cover;
+    
+    padding-top: 20vh;
+    color: #ffffff;
+    margin-bottom: 100px;
 
+}
+.about-image{
+    margin-top:100px;
+    height:450px;
+    width:400px
+}
 .home-area .mobile-image {
     margin-right: 0;
     margin-left: 0;
@@ -455,7 +480,7 @@ input:-webkit-autofill:focus {
 /*-- 8. Progress-Area --*/
 
 .progress-area {
-    background-image: url('images/progress-bg.jpg');
+   
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 100%;
@@ -537,13 +562,7 @@ input:-webkit-autofill:focus {
     font-size: 20px;
     line-height: 72px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #dd3838, #ce333c, #be303e, #ad2d3f, #9d2b3f);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     overflow: hidden;
@@ -658,13 +677,7 @@ input:-webkit-autofill:focus {
 
 .gallery-area {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #b92b2b, #a9272f, #982531, #872332, #762231);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
@@ -920,7 +933,7 @@ input:-webkit-autofill:focus {
 /*-- 17. Subscribe-Form --*/
 
 .subscribe-area {
-    background: url('images/subscribe-bg.jpg') no-repeat scroll center center / cover;
+    background: url('images/subscribe.jpg') no-repeat scroll center center / cover;
 }
 
 .subscribe-form {
@@ -964,13 +977,7 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     font-size: 20px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#482cbf+0,6ac6f0+100 */
-    background: rgb(72, 44, 191);
-    /* Old browsers */
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #dd3838, #ce333c, #be303e, #ad2d3f, #9d2b3f);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     border-radius: 100%;
@@ -1054,10 +1061,7 @@ input:-webkit-autofill:focus {
 }
 
 .preloader span {
-    background: rgb(72, 44, 191);
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #dd3838, #ce333c, #be303e, #ad2d3f, #9d2b3f);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     border-radius: 100%;
     height: 60px;
@@ -1078,57 +1082,55 @@ input:-webkit-autofill:focus {
 
 @-webkit-keyframes mymove {
     0 {
-        -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(255, 49, 49, 0.6), 0 0 0 10px rgba(222, 49, 49, 0.6);
+
     }
     25% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
     }
     50% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 20px rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 20px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(252, 94, 94, 0.55), 0 0 0 10px rgba(252, 94, 94, 0.6);
     }
     75% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
         box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
     }
     100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow:0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
     }
 }
 
 @keyframes mymove {
     0 {
-        -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(255, 49, 49, 0.6), 0 0 0 10px rgba(222, 49, 49, 0.6);
     }
     25% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
     }
     50% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 20px rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 20px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(255, 49, 49, 0.6), 0 0 0 10px rgba(222, 49, 49, 0.6);
     }
     75% {
-        -webkit-box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 10px rgba(94, 136, 252, 0.6), 0 0 0 10px rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(255, 49, 49, 0.6), 0 0 0 10px rgba(222, 49, 49, 0.6);
     }
     100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
-        box-shadow: 0 0 0 0 rgba(94, 136, 252, 0.6), 0 0 0 0 rgba(94, 136, 252, 0.6);
+        -webkit-box-shadow:0 0 0 10px rgba(243, 89, 89, 0.6), 0 0 0 20px rgba(252, 94, 94, 0.6);
+        box-shadow: 0 0 0 10px rgba(255, 49, 49, 0.6), 0 0 0 10px rgba(222, 49, 49, 0.6);
     }
 }
 
 /*-- 20. Blog-Post --*/
 
 .site-header {
-    background: rgb(72, 44, 191);
-    background: -webkit-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: -o-linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
-    background: linear-gradient(45deg, rgba(72, 44, 191, 1) 0%, rgba(106, 198, 240, 1) 100%);
+    background-image: linear-gradient(to right top, #dd3838, #ce333c, #be303e, #ad2d3f, #9d2b3f);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#482cbf', endColorstr='#6ac6f0', GradientType=1);
     color: #ffffff;
     padding: 180px 0 120px;
