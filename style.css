@@ -454,6 +454,45 @@ input:-webkit-autofill:focus {
     color: #ffffff;
     margin-bottom: 100px;
 }
+.product-cover{
+    width: 100%;
+  /* color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);   */
+  background: url('images/lines.gif') no-repeat scroll center bottom / cover;
+    padding-top: 26vh;
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+@-webkit-keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @-webkit-keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+.typewriter h3 {
+    font: bold 300% Consolas, Monaco, monospace;
+  border-right: 0.1em solid white;
+  width: 16.5em;
+  width: 19ch;
+  margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 4s steps(21, end),
+    blink-caret 0.5s step-end infinite alternate;
+  }
+
+@media(max-width:550px){
+    .typewriter h3{
+        font-size:25px;
+        width:11ch;
+    }
+}
+
 .about-area{
     width: 100%;
     background: url('images/about.gif') no-repeat scroll center bottom / cover;
@@ -1352,4 +1391,10 @@ input:-webkit-autofill:focus {
 
 .MCAW-product{
     padding-left:100px;
+}
+
+.WARD-video{
+    height:100%;
+
+  background-image: url("images/about.gif");
 }
