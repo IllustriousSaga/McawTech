@@ -278,7 +278,7 @@ input:-webkit-autofill:focus {
 }
 
 .blue-color {
-    color: #5e88fc;
+    color: #db5757;
 }
 
 .white-color {
@@ -923,7 +923,7 @@ input:-webkit-autofill:focus {
     outline: none;
     padding: 20px 30px 20px 60px;
     color: #434345;
-    border-left: 5px solid #5e88fc;
+    border-left: 5px solid #db5757;
     cursor: pointer;
     position: relative;
 }
@@ -957,7 +957,7 @@ input:-webkit-autofill:focus {
 .toggole-boxs div {
     background-color: #ffffff;
     padding: 0 30px 20px 60px;
-    border-left: 5px solid #5e88fc;
+    border-left: 5px solid #db5757;
 }
 
 /*-- 17. Subscribe-Form --*/
